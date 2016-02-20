@@ -16,7 +16,7 @@ ul {
 	margin: 0;
 	padding: 0;
 }
-* {	font-family: 'Open Sans', sans-serif; }
+* {	 }
 body {	font-size: 14px; }
 .templatemo-container {
 	margin: 0 auto;
@@ -148,7 +148,7 @@ section { padding: 50px 0; }
 	-webkit-align-items: center;
 	    -ms-flex-align: center;
 	        align-items: center;
-	        justify-content: flex-end;
+	        justify-content: center;
 	padding-left: 10px;
 	padding-right: 10px;
 	margin-top: 10px;
@@ -159,7 +159,6 @@ section { padding: 50px 0; }
 	font-size: 1.4em;
 }
 .templatemo-social i {
-	background: #BBB;
 	border-radius: 30px;
 	line-height: 30px;
 	width: 30px;
@@ -168,12 +167,12 @@ section { padding: 50px 0; }
 	text-align: center;
 	transition: all 0.3s ease;
 }
-.templatemo-social a:hover i {	background: black; }
-.templatemo-nav { background: #000;	}
+.templatemo-social a:hover i {	background: #fff; color: #000;}
+.templatemo-nav { background: rgb(0, 188, 212);box-shadow: inset 0 -.1rem .25rem rgba(0,0,0,.1);}
 .templatemo-nav li { line-height: 50px; }
 .templatemo-nav a {
 	font-weight: bold;
-	color: #D0AF51;
+	color: #fff;
 	display: block;
 	height: 50px;
 	width: 150px;
@@ -373,7 +372,7 @@ section { padding: 50px 0; }
 }
 .about-us-text {
 	line-height: 1.8em;
-	margin: 80px auto 40px auto;
+	margin: 40px auto 40px auto;
 	max-width: 800px;
 }
 footer {
@@ -525,15 +524,16 @@ hr.tab-hr {	border-style: dashed;border-color: gray}
 	float: left;
 }
 .tag-list a {
-	color: #AFADAD;
+	color: #fff;
 	display: block;
-	background: #505050;
+	background: rgb(0, 188, 212);
 	padding: 8px 10px;
 	margin-bottom: 5px;
 	margin-right: 5px;
 	border-radius: 10px;
+	font-size: 12px;
 }
-.tag-list a:hover {	color: #D0AF51;}
+.tag-list a:hover {	background:#3C3C3D;}
 
 /* 7. Contact
 --------------------------------------*/

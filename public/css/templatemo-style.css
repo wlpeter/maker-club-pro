@@ -239,7 +239,6 @@ section { padding: 50px 0; }
 
 /* Product Type */
 .product-type-container {
-	display: inline-block;
 	position: relative;
 	margin-bottom: 15px;
 	max-width: 100%;
@@ -256,7 +255,7 @@ section { padding: 50px 0; }
 	-webkit-justify-content: center;
 	    -ms-flex-pack: center;
 	        justify-content: center;
-	width: 100%;
+	width: 70%;
 	height: 100%;
 	background: rgba(208, 131, 81, 0.15);
 	z-index: 1000;
@@ -600,7 +599,7 @@ hr.tab-hr {	border-style: dashed;border-color: gray}
 		width: inherit;
 		text-align: left;
 	}
-	.templatemo-social {float:left; height: 40px;}
+	.templatemo-social {height: 40px;}
 	.templatemo-header-left { height: 100px; }
 	.templatemo-header-right { height: auto; }
 	.templatemo-header-right-overlay {display: none;}

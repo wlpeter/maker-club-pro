@@ -9,7 +9,7 @@ var bodyParser = require('body-parser');
 var mongoose = require('mongoose');
 var config = require("./settings");
 
-var routes = require('./routes/index');
+var aboutme = require('./routes/aboutme');
 var users = require('./routes/users');
 var blog = require('./routes/blog');
 
@@ -43,8 +43,8 @@ app.listen(app.get('port'), function() {
 });
 
 // ------------------------导入路由----------------------------
-app.use('/', routes);
-app.use('/users', users);
+app.use('/', blog);
+app.use('/aboutme', aboutme);
 app.use('/blog', blog);
 
 // catch 404 and forward to error handler

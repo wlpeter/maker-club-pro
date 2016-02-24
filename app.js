@@ -9,10 +9,12 @@ var bodyParser = require('body-parser');
 var mongoose = require('mongoose');
 var config = require("./settings");
 
-var router = require('./routes/routes-all');
+// 导入总路由
+var routerAll = require('./routes/routes-all');
 
 var app = express();
 
+// mongo数据连接
 mongoose.connect(config.mongodb.address);
 // ------------------------设置参数----------------------------
 // view engine setup
@@ -41,7 +43,7 @@ app.listen(app.get('port'), function() {
 });
 
 // ------------------------导入总路由----------------------------
-router(app);
+routerAll(app);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {

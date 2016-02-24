@@ -9,9 +9,7 @@ var bodyParser = require('body-parser');
 var mongoose = require('mongoose');
 var config = require("./settings");
 
-var aboutme = require('./routes/aboutme');
-var users = require('./routes/users');
-var blog = require('./routes/blog');
+var router = require('./routes/routes-all');
 
 var app = express();
 
@@ -42,10 +40,8 @@ app.listen(app.get('port'), function() {
     console.log('listening on port ' + app.get('port'));
 });
 
-// ------------------------导入路由----------------------------
-app.use('/', blog);
-app.use('/aboutme', aboutme);
-app.use('/blog', blog);
+// ------------------------导入总路由----------------------------
+router(app);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {

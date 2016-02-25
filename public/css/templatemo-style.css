@@ -420,6 +420,23 @@ footer {
 
 /* 6. Blog
 --------------------------------------*/
+.blog-hr-top {
+	border-top-color: #D0AF51;
+	width: inherit;
+	margin: 0 0 30px 0;
+}
+.blog-hr-bottom {
+	border-top-color: #D0AF51;
+	width: inherit;
+	margin: 30px 0 0 0;
+}
+.tag-text {
+	font-family: Raleway,cursive;
+	font-style: italic;
+	font-size: 15px;
+	color: #a8171d;
+	font-weight: bold;
+}
 .list-item {
     background: #59b3d0;
     border-radius: 30%;

@@ -17,4 +17,10 @@ module.exports = function (app) {
             title: 'aboutme'
         });
     });
+    app.get('/blog/:id', function(req, res, next) {
+        console.log(req.params);
+        res.render('context', {
+            title: 'context'
+        });
+    });
 }

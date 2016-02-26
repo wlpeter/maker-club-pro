@@ -106,7 +106,8 @@ section { padding: 50px 0; }
 	    -ms-flex-align: center;
 	        align-items: center;
 	height: 100%;
-	position: relative;
+	width: 100%;
+	position: absolute;
 	z-index: 1000;
 }
 .templatemo-header-text {
@@ -118,7 +119,7 @@ section { padding: 50px 0; }
     clear:both;
 }
 .templatemo-site-name {
-	margin-top: 10px;
+	margin-top: 0px;
 	letter-spacing: 3px;
 	font-size: 45px;
 	padding-left: 10px;
@@ -496,6 +497,7 @@ footer {
 	display: -webkit-flex;
 	display: -ms-flexbox;
 	display: flex;
+	text-align: center;
 	-webkit-align-items: center;
 	    -ms-flex-align: center;
 	        align-items: center;
@@ -511,10 +513,8 @@ footer {
 }
 .post-read-more {
 	display: block;
-	margin-bottom: 55px;
 	margin-top: 30px;
 }
-.blog-post-pagination {	margin-top: 50px; }
 .templatemo-blog-post-aside { padding-top: 70px; }
 
 /* aside */
@@ -622,6 +622,7 @@ hr.tab-hr {	border-style: dashed;border-color: gray}
 	.templatemo-header-right { height: auto; }
 	.templatemo-header-right-overlay {display: none;}
 	.templatemo-header-text {text-align: left;}
+	.templatemo-header-text-wrap {width:inherit;}
 	.templatemo-header-text-wrap,
 	.templatemo-header-left-overlay { height: 100px; }
 	.templatemo-nav {
@@ -631,6 +632,7 @@ hr.tab-hr {	border-style: dashed;border-color: gray}
 		height: initial;
 		overflow: auto;
 		z-index: 1000;
+		height: inherit;
 	}
 	.templatemo-nav li {
 		display: block;

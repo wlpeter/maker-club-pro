@@ -2,13 +2,15 @@ module.exports = function (app) {
     /* GET users listing. */
     app.get('/', function(req, res, next) {
         res.render('blog', {
-            title: 'blog'
+            title: 'blog',
+            bolgList: [{day:"1"},{day:"1"}]
         });
     });
 
     app.get('/blog', function(req, res, next) {
         res.render('blog', {
-            title: 'blog'
+            title: 'blog',
+            bolgList: [{day:"1"},{day:"1"}]
         });
     });
 

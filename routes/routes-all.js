@@ -3,14 +3,16 @@ module.exports = function (app) {
     app.get('/', function(req, res, next) {
         res.render('blog', {
             title: 'blog',
-            bolgList: [{day:"1"},{day:"1"}]
+            bolgList: [{day:"1"},{day:"1"}],
+            pageList: []
         });
     });
 
     app.get('/blog', function(req, res, next) {
         res.render('blog', {
             title: 'blog',
-            bolgList: [{day:"1"},{day:"1"}]
+            bolgList: [{day:"1"},{day:"1"}],
+            pageList: []
         });
     });
 

@@ -6,7 +6,6 @@ var favicon = require('serve-favicon');
 var logger = require('morgan');
 var cookieParser = require('cookie-parser');
 var bodyParser = require('body-parser');
-var mongoose = require('mongoose');
 var config = require("./settings");
 
 // 导入总路由
@@ -14,8 +13,6 @@ var routerAll = require('./routes/routes-all');
 
 var app = express();
 
-// mongo数据连接
-mongoose.connect(config.mongodb.address);
 // ------------------------设置参数----------------------------
 // view engine setup
 // 设置模板文件的路径

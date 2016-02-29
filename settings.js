@@ -1,6 +1,6 @@
 module.exports = {
     port: "8001",
     mongodb: {
-        address: "127.0.0.1"
+        address: "mongodb://127.0.0.1"
     }
 };

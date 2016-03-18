@@ -25,7 +25,7 @@ app.set('view engine', 'ejs');
 // uncomment after placing your favicon in /public
 // 设置图标
 //app.use(favicon(path.join(__dirname, 'public', 'favicon.ico')));
-app.use(logger('dev'));
+//app.use(logger('dev'));
 // 接收http访问时允许的数据最大值,（默认为空即100kb）
 //app.use(bodyParser.json({limit: '10mb'}));
 app.use(bodyParser.urlencoded({ limit: '100mb',extended: true, parameterLimit: 99999999}));

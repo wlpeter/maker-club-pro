@@ -6,7 +6,9 @@ var favicon = require('serve-favicon');
 var logger = require('morgan');
 var cookieParser = require('cookie-parser');
 var bodyParser = require('body-parser');
-var config = require("./settings");
+var config = require("./config/settings");
+
+require('./lib/common/common-init');
 
 // 导入总路由
 var routerAll = require('./routes/routes-all');

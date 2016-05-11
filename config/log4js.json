@@ -1,0 +1,18 @@
+{
+    "appenders": [
+        {
+            "type": "console"
+        },
+        {
+            "type": "file",
+            "filename": "logs/app.log",
+            "pattern": "_yyyy-MM-dd.log",
+            "maxLogSize": "1024",
+            "category": "web"
+        }
+    ],
+    "replaceConsole": true,
+    "levels": {
+        "web": "INFO"
+    }
+}

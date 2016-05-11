@@ -1,6 +1,0 @@
-{
-    "modelList": [
-        "article.server.model",
-        "user.server.model"
-    ]
-}

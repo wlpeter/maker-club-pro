@@ -1,7 +1,7 @@
 /**
  * 博客文章文档
  */
-var mongoose = require('mongoose');
+var mongoose = require('../lib/mongodb/mongodb-init'),
 
 // 定义博客文章模型结构
 var ArticleSchema = new mongoose.Schema({
@@ -13,4 +13,7 @@ var ArticleSchema = new mongoose.Schema({
     update_at:      {type: Date, default: Date.now }    // 修改时间
 });
 
-mongoose.model('ArticleSchema', ArticleSchema);
+ArticleSchema.index({uuid: 1});
+ArticleSchema.index({author_id: 1});
+
+mongoose.model('Article', ArticleSchema, 'Article');

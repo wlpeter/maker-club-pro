@@ -3,18 +3,16 @@
 var express = require('express');
 var path = require('path');
 var favicon = require('serve-favicon');
-var logger = require('morgan');
 var cookieParser = require('cookie-parser');
 var bodyParser = require('body-parser');
-var config = require("./config/settings");
-
-require('./lib/common/common-init');
+var config = require("./config/settings.json");
+var logger = require("./lib/logger/logger");
 
 // 导入总路由
 var routerAll = require('./routes/routes-all');
 
 var app = express();
-
+logger.info(process.env.NODE_ENV);
 // ------------------------设置参数----------------------------
 // view engine setup
 // 设置模板文件的路径
@@ -38,11 +36,11 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 app.set('port', config.port);
 app.listen(app.get('port'), function() {
-    console.log('listening on port ' + app.get('port'));
+    logger.info('listening on port ' + app.get('port'));
 });
 
 // ------------------------导入总路由----------------------------
-routerAll(app);
+app.use(routerAll);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {

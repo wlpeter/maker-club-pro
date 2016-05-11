@@ -1,0 +1,15 @@
+{
+    "port": "8001",
+    "mongodb": {
+        "uri": "mongodb://blogUserWR:qwerasdf@127.0.0.1:27017/myblog",
+        "options": {
+            "db": {
+                "native_parser": "true"
+            },
+            "server": {
+                "auto_reconnect": "true",
+                "poolSize": "5"
+            }
+        }
+    }
+}

@@ -6,13 +6,13 @@
         {
             "type": "file",
             "filename": "logs/app.log",
-            "pattern": "_yyyy-MM-dd.log",
+            "pattern": "_yyyy-MM-dd",
             "maxLogSize": "1024",
             "category": "web"
         }
     ],
     "replaceConsole": true,
     "levels": {
-        "web": "INFO"
+        "[ALL]": "INFO"
     }
 }

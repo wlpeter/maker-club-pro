@@ -78,7 +78,7 @@ section { padding: 50px 0; }
 	background-size: cover;
 	color: #fff;
 	position: relative;
-	background: url(../img/sea.jpg) no-repeat;
+	background: url(../img/banner.jpg) no-repeat;
 }
 .templatemo-header-left-overlay {
 	background-color: rgba(0,0,0,0.4);
@@ -90,11 +90,10 @@ section { padding: 50px 0; }
 	left: 0;
 }
 .templatemo-header-right {
-	/*background: url(../img/header-img.jpg) no-repeat;*/
+	background: url(../img/sunglow.jpg) no-repeat;
 	background-size: cover;
 }
 .templatemo-header-right-overlay {
-	background-color: rgba(208, 175, 81, 0.4);
 	height: 100%;
 	width: 100%;
 }
@@ -601,6 +600,7 @@ hr.tab-hr {	border-style: dashed;border-color: gray}
 		font-size: 10px;
 		letter-spacing: 4px;
 	}
+	.tag-text {font-size: 10px;}
 	.templatemo-blog-post-aside { padding-top: 0; }
 }
 

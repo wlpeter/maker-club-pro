@@ -27,7 +27,7 @@ app.set('view engine', 'ejs');
 //app.use(favicon(path.join(__dirname, 'public', 'favicon.ico')));
 //app.use(logger('dev'));
 // 接收http访问时允许的数据最大值,（默认为空即100kb）
-//app.use(bodyParser.json({limit: '10mb'}));
+app.use(bodyParser.json({limit: '10mb'}));
 app.use(bodyParser.urlencoded({ limit: '100mb',extended: true, parameterLimit: 99999999}));
 app.use(cookieParser());
 // 导入public下的静态文件
@@ -62,16 +62,16 @@ if (app.get('env') === 'development') {
             error: err
         });
     });
-} else {
-    // production error handler
-    // no stacktraces leaked to user
-    app.use(function(err, req, res, next) {
-        res.status(err.status || 500);
-        res.render('error', {
-            message: err.message,
-            error: {}
-        });
-    });
 }
+
+// production error handler
+// no stacktraces leaked to user
+app.use(function(err, req, res, next) {
+    res.status(err.status || 500);
+    res.render('error', {
+        message: err.message,
+        error: {}
+    });
+});
 
 module.exports = app;
